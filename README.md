@@ -21,8 +21,11 @@ button, it immediately sanitizes the html and leaves me with this:
       <source>
       <source>
 
-I've tried to edit the `config.wymeditor.whitelis.tags` option
+I've tried to edit the `config.wymeditor.whitelist.tags` option
 several different ways with no luck:
+
+    # config/initializers/refinery/core.rb
+    ...
 
     # Add extra tags to the wymeditor whitelist e.g. = {'tag' => {'attributes' => {'1' => 'href'}}} or just {'tag' => {}}
     config.wymeditor_whitelist_tags = {'source' => {}}
